@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.jss.artha.addpost"
+    android:background="@color/white">
+
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="360dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/white"
+            android:src="@drawable/back"
+            android:scaleType="fitCenter"
+            tools:ignore="MissingConstraints" />
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Post"
+        android:layout_marginStart="100dp"
+        android:textColor="@color/appGreen"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints" />
+
+    </android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layerType="software"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/post_body"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        android:hint="Enter your thoughts"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layerType="software"
+        android:layout_marginTop="100dp"/>
+
+
+
+
+
+        <Button
+            android:id="@+id/post"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/curve_button"
+            android:text="POST" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Artha</string>
+    <string name="title_activity_bottom_navigate1">BottomNavigate1</string>
+    <string name="title_home">Stories</string>
+    <string name="title_dashboard">Local Stories</string>
+    <string name="title_notifications">Trending</string>
+    <string name="open" />
+    <string name="close" />
+     
+    <string-array name="sports_array">
+                
+        <item>India</item>
+        <item>Bangalore</item>
+        <item>Hyderabad</item>
+        <item>Chennai</item>
+        <item>Mumbai</item>
+        <item>kolkata</item>
+        <item>Kyu kata</item>
+    </string-array>
+</resources>

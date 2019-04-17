@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorgold">#FFDF00</color>
+    <color name="white">#FFFFFF</color>
+    <!--<color name="white_light">#F0F0F0</color>-->
+    <color name="white_light">#DCDCDC</color>
+
+    <color name="light_black">#484848</color>
+    <color name="black">#000000</color>
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+
+    <color name="appGreen">#22A246</color>
+    <color name="applightgreen">#C0EA7C</color>
+</resources>

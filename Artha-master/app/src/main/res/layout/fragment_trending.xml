@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_light">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first"
+        android:background="@android:color/white"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/profile"
+                android:tint="@color/appGreen"
+                android:src="@drawable/profile"
+                android:scaleType="fitCenter"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="254dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="@+id/profile"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="end"
+                android:fontFamily="@font/ubuntu"
+                android:text="Trending"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/more"
+                    android:tint="@color/appGreen"
+                    android:src="@android:drawable/ic_input_add"
+                    android:background="@color/white"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/idRecyclerViewHorizontalList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/first"/>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feed_recycler"
+        app:layout_constraintTop_toBottomOf="@id/idRecyclerViewHorizontalList"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.constraint.ConstraintLayout>

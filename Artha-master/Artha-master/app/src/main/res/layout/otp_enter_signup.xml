@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/appGreen"
+    tools:context="com.jss.artha.OtpEnter">
+
+    <ImageView
+        android:id="@+id/divein"
+        android:layout_gravity="center"
+        android:layout_width="243dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_sans_extralight"
+        android:text="artha"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:src="@drawable/artha_logo_whitecolor"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="@font/nunito_sans_extralight" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="123dp"
+        android:layout_marginTop="200dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:text="Enter OTP"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+        <EditText
+            android:id="@+id/enter_otp_1"
+            android:layout_width="71dp"
+            android:layout_height="59dp"
+            android:background="@drawable/round_button"
+            android:inputType="numberSigned"
+            android:maxLength="1"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/enter_otp_2"
+            android:layout_width="71dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="136dp"
+            android:background="@drawable/round_button"
+            android:inputType="numberSigned"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/enter_otp_3"
+            android:layout_width="71dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="204dp"
+            android:background="@drawable/round_button"
+            android:inputType="numberSigned"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/enter_otp_4"
+            android:layout_width="71dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginLeft="272dp"
+            android:background="@drawable/round_button"
+            android:inputType="numberSigned"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="205dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/curve_button"
+        android:radius="360dp"
+        android:layout_gravity="center"
+        android:text="Sign-Up"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</LinearLayout>

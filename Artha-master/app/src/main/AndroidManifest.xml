@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.artha">
+
+    <uses-permission
+        android:name="org.apache.http.legacy"
+        android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.jss.artha.GlobalClass"
+        android:allowBackup="true"
+        android:icon="@drawable/artha_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/artha_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.jss.artha.article"
+            android:launchMode="singleTask"/>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name="com.jss.artha.addpost"
+            />
+        <activity android:name="com.jss.artha.feedselect" />
+        <activity android:name="com.jss.artha.User_Profile" />
+        <activity android:name="com.jss.artha.First_Page" />
+        <activity
+            android:name="com.jss.artha.BottomNavigate1"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+
+            android:label="@string/title_activity_bottom_navigate1" />
+        <activity android:name="com.jss.artha.Home" />
+        <activity
+            android:name="com.jss.artha.OtpEnter"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="com.jss.artha.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name="com.jss.artha.PrivacyPolicy"></activity>
+        <activity android:name="com.jss.artha.article2"
+            android:launchMode="singleTask"></activity>
+    </application>
+
+</manifest>

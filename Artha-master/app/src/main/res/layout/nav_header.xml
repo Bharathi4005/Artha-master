@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/constraintp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/headerbg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints"
+      >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_launcher"
+
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/procam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileimg"
+            android:layout_alignBaseline="@id/profileimg"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="-35dp"
+            android:layout_toEndOf="@id/profileimg"
+            android:src="@drawable/procam" />
+
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileimg"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="Bharathi"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

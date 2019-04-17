@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:background="#FFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Relative">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            android:background="#1B8009">
+
+
+            <RelativeLayout android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stories"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="@font/ubuntu"
+                    android:id="@+id/head"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+
+                    />
+
+                <TextView
+                    android:id="@+id/addpost1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="+"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignBaseline="@id/head"
+                   />
+
+
+
+                <!--&lt;!&ndash;<Image&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/profile"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:tint="@android:color/holo_blue_dark"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/profile"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:scaleType="fitCenter"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@color/white"/>&ndash;&gt;-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/head"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Stories"-->
+                    <!--android:textSize="25sp"-->
+                    <!--android:gravity="center_horizontal-->
+<!--"-->
+                    <!--android:textStyle="bold" />-->
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Stories"
+            android:layout_below="@+id/toolbar"
+            />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@color/appGreen"
+            app:itemTextColor="@color/black"
+            app:labelVisibilityMode="labeled"
+            android:background="#FFF"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/navigation" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+        <include
+            layout="@layout/nav_header"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:background="#ffff"
+            android:layout_height="match_parent"
+            android:id="@+id/recycle"
+            android:layout_gravity="start">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

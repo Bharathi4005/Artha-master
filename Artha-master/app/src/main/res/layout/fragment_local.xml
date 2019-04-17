@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white_light"
+    android:id="@+id/linearlayout"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:outlineSpotShadowColor="@color/white"
+        android:background="@color/white"
+        >
+
+        <HorizontalScrollView
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/a"
+                   android:layout_marginStart="120dp"
+                   android:text="Select City!"
+                   android:textSize="25dp"
+                   android:textColor="@color/black"
+                   android:fontFamily="@font/montserrat"
+                   android:layout_marginLeft="140dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/first"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/profile"
+                android:tint="@color/appGreen"
+                android:src="@drawable/profile"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="254dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ubuntu"
+                android:id="@+id/head"
+                android:textAlignment="center"
+                android:text="Local Stories"
+                android:layout_alignParentLeft="@+id/profile"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="end" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/more"
+                    android:tint="@color/appGreen"
+                    android:src="@android:drawable/ic_input_add"
+                    android:background="@color/white"
+                    android:layout_gravity="right" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/feed_recycler"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentTop="true"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_light"
+    tools:context="com.jss.artha.BottomNavigate1">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Select Your City"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:background="@color/white_light"
+        android:textAlignment="viewStart"
+        android:gravity="start" />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="250dp"
+        android:id="@+id/close"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_marginLeft="250dp"
+        />
+</RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:clickable="true"></ListView>
+
+</LinearLayout>

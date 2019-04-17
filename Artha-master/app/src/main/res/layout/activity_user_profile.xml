@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/profileparent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/protoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appGreen"
+        tools:ignore="MissingConstraints">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/c"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backb"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/back"
+                app:layout_constraintStart_toStartOf="@id/c"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROFILE"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/backb"
+                android:layout_marginLeft="10dp"
+                 app:layout_constraintTop_toTopOf="@id/c"
+                app:layout_constraintBottom_toBottomOf="@id/c"
+
+
+
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/L1"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/protoolbar"
+        tools:ignore="MissingConstraints">
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:scrollbars="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            android:id="@+id/child"
+
+
+           >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="142dp"
+                android:layout_height="79dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="@id/child"
+                app:srcCompat="@drawable/profile"
+                app:layout_constraintStart_toStartOf="@id/child"
+                app:layout_constraintEnd_toEndOf="@id/child"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="username"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@id/child"
+                app:layout_constraintEnd_toEndOf="@id/child"
+                />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/username"
+                app:layout_constraintStart_toStartOf="@id/child"
+                app:layout_constraintEnd_toEndOf="@id/child"
+                />
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/curve_button2"
+                android:hint="First name"
+                android:digits="qwertyuioplkjhgfdsazxcvbnm ,QWERTYUIPOLKJHGFDSAZXCVBNM"
+                android:inputType="textCapCharacters"
+                android:textColor="#FFF"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/curve_button2"
+                android:editable="true"
+                android:digits="qwertyuioplkjhgfdsazxcvbnm ,QWERTYUIPOLKJHGFDSAZXCVBNM"
+                android:hint="Last Name"
+                android:inputType="textCapCharacters"
+                android:textColor="#FFF"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/firstname" />
+
+
+
+                <Spinner
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:hint="Gender"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/curve_button2"
+                    android:layout_marginLeft="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/lastname"
+                    android:textSize="15sp"
+                    android:padding="13dp"
+
+                  />
+
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/curve_button2"
+                android:editable="true"
+                android:hint="DOB"
+                android:clickable="true"
+                android:focusable="false"
+                android:maxLength="10"
+                android:inputType="date"
+                android:textColor="#FFF"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/curve_button2"
+                android:editable="true"
+                android:hint="Email"
+                android:inputType="textCapCharacters"
+                android:textColor="#FFF"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+            <Spinner
+                android:id="@+id/state"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:padding="13dp"
+                android:background="@drawable/curve_button2"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+               />
+
+            <Spinner
+                android:id="@+id/city"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/curve_button2"
+                android:padding="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@id/state"
+               />
+
+            <EditText
+                android:id="@+id/zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="6"
+                android:textAllCaps="true"
+                android:background="@drawable/curve_button2"
+                android:editable="true"
+                android:hint="Zipcode"
+                android:inputType="numberSigned"
+                android:textColor="@color/white"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/city"
+                />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curve_button"
+                android:text="Save"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                 app:layout_constraintBottom_toBottomOf="@id/child"
+                android:layout_marginBottom="100dp"
+                app:layout_constraintTop_toBottomOf="@id/zipcode"
+                android:textColor="@color/black" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+     </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

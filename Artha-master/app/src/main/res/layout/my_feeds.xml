@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        >
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="10dp"
+            android:id="@+id/profile_pic"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="40dp"
+            android:lines="2"
+            android:text="username"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:fontFamily="@font/montserrat"
+            tools:fontFamily="@font/syncopate" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="userhandle"
+            android:layout_marginStart="80dp"
+            android:textColor="#4B2795"
+            android:textSize="10sp"
+            android:id="@+id/userhandle"
+            android:layout_marginTop="17sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:id="@+id/post_body"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:background="#F8F9F9"
+            android:maxLines="3"
+            android:text="post body"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:fontFamily="@font/ubuntu"
+             />
+
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="300dp"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted"
+            android:layerType="software"
+            android:layout_marginTop="100dp"/>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

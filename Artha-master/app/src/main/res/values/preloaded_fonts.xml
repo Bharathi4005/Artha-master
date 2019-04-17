@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/chewy</item>
+        <item>@font/montserrat</item>
+        <item>@font/nunito_sans_extralight</item>
+        <item>@font/playfair_display</item>
+        <item>@font/syncopate</item>
+        <item>@font/ubuntu</item>
+    </array>
+</resources>
